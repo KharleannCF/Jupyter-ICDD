@@ -1,0 +1,186 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "kharleann@gmail.com"; // this is your Email address
+    $from = $_POST['correo']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $subject = "Form submission";
+    $message = $first_name . " " . " wrote the following:" . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    mail($to,$subject,$message,$headers);
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    }
+?>
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Kharleann</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Bellefair|Gentium+Basic|Tienne" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="">
+<nav class="navbar navbar-default navbar-fixed-top">
+  
+    <div class="navbar-header">
+      <button id="cambia-color" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle dropdown">
+            <span class="sr-only"> Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="#">Kharleann Cabrera</a>
+    </div>
+	
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#inicio">About me</a></li>
+      <li><a href="#PortFolio">PortFolio</a></li>
+      <li class="margenr"><a href="#contacto">Contact</a></li>
+    </ul>
+<ul class="nav navbar-nav navbar-left">
+			<li class="row margenl">	<a href="https://www.facebook.com/kharleann.cabrera" target="_blank" class="col-xs-1 fa fa-facebook"></a>
+				<a href="https://twitter.com/KharleannQuotes" target="_blank" class="col-xs-1  fa fa-twitter"></a>
+				<a href="https://github.com/KharleannCF" target="_blank" class="col-xs-1  fa fa-github"></a><li>
+    </ul>
+  </div>
+	
+</nav>
+	
+  <div id="inicio" class="well fondo2">
+  <div class="row">
+    <div class="col-xs-4 col-md-4 col-xs-offset-1 col-md-offset-1">
+      <div class="thumbnail margen-foto">
+    <img class="img-responsive" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/16508187_1909320259292022_7441331760892684309_n.jpg?oh=ad0738281d87fc04071f4fde0544fa1d&oe=5A0DFD4F" alt="Kharleann Cabrera and his co-worker Mingo"> 
+        <div class="caption text-center textti">
+          Mingo, model and co-worker
+        </div>
+      </div>
+      
+    </div>
+    <div class="margen-text">
+      <div class="col-xs-7 col-md-7">
+      <div class=" borde text-center">
+      <h4>I am a student of computer science in Venezuela, currently doing the courses of freecodecamp <br> <br> Always interested in learning pop culture especially videogames or make new projects.</h4>
+      </div>
+      </div>
+    </div>
+  </div>
+		<br>
+		<div class="borde text-center">
+			<h3>"It's dangerous to go alone! Take <a href="#contacto" target="_blank">this</a>."</h3> <br>
+			<br>
+		</div>
+	<!--Aquí empieza el slide de imagenes -->
+  <h2 id="PortFolio" Class="text-center borde colorPort">PortFolio</h2>  
+		</div>
+	<div class="margensup">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+				<div class="row">
+					<a href="https://codepen.io/KharleannCF/pen/JJBXYB" target="_blank">
+					<div class="col-xs-4 col-md-4 col-xs-offset-2 col-md-offset-2 vcenter">
+        <img class="img-responsive" src="https://image.ibb.co/hmHah5/tribute.png" alt="Clyde William Tombaugh">
+					</div><!--
+					--><div class="col-xs-4 cal-md-4 vcenter colorPort">
+						<h3 class="text-center textcar">Tribute Page</h3>
+						<h4 class="text-center textcar">Clyde William Tombaugh</h4>
+					</div>
+					</a>
+				</div>
+      </div>
+
+      <div class="item">
+				<div class="row">
+					<div class="col-xs-4 col-md-4 col-xs-offset-2 col-md-offset-2 vcenter">
+        <img class="img-responsive" src="https://image.ibb.co/neisUk/descarga.png" alt="Placeholder" >
+					</div><!--
+					--><div class="col-xs-4 cal-md-4 vcenter">
+						<h3 class="text-center textcar">Placeholder</h3>
+					</div>
+				</div>
+      </div>
+    
+      <div class="item">
+        <div class="row">
+					<div class="col-xs-4 col-md-4 col-xs-offset-2 col-md-offset-2 vcenter">
+        <img class="img-responsive" src="https://image.ibb.co/neisUk/descarga.png" alt="Placeholder">
+					</div><!--
+					--><div class="col-xs-4 cal-md-4 vcenter">
+						<h3 class="text-center textcar">Placeholder</h3>
+					</div>
+				</div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+		</div>
+		<!-- Fin Carrusel -->
+		<div id="contacto" class="well fondo3 mcontact">
+		<div class="row">
+			<div class="col-xs-4 col-md-4 col-xs-offset-1 col-md-offset-1 vcenter">
+		<form class="borde" action="" method="post" >
+       <div class="form-group float-label-control">
+         <label for="">Name</label>
+         <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+       </div>
+       <div class="form-group float-label-control">
+          <label for="">Email</label>
+        <input type="text" name="correo" class="form-control" placeholder="Correo">
+        </div>
+        <div class="form-group float-label-control">
+             <label for="">Message</label>
+           <textarea class="form-control" name="message" placeholder="Mensaje" rows="4"></textarea>
+          </div>
+			<input type="submit" name="submit" value="Submit" class="btn colorbtn">
+			</form>
+		</div><!--
+		--><div class="col-xs-offset-1 col-xs-5 col-md-offset-1 col-md-5 vcenter">
+		</div>
+</div>
+			<br> <br>
+			<div class="row">
+			<div class="col-xs-offset-8 col-xs-6 col-md-offset-7 col-md-4">
+			<q class="borde text-center textti textgr"> Critical thinking is the key to success.</q>
+			<p class="borde text-right textgen">- Prof.Hershel Layton</p>
+			</div>
+			</div>				 
+</div>
+</div>
+	<footer class="margenbot">
+		 <p class="borde text-center smallt textti">&copy; 2017 Kharleann Cabrera</p>
+			</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+  
+</body>
+</html>

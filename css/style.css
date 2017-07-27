@@ -1,0 +1,142 @@
+
+/* navbar */
+.navbar-default {
+    background-color: #33cc33;
+    border-color: #000;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: #000;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+.margenr{
+	 margin:0px 10px 0px 0px;
+}
+.margenl{
+	margin:0px 0px 0px 10px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-right  > li:hover > a {
+  background-color:#009933;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav  > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #333;
+    background-color: #248f24;
+}
+/*cambia color del boton en celulares */
+#cambia-color:hover{
+  background-color: #196619;
+}
+#cambia-color:focus{
+  background-color: #008000;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #fff;
+}
+
+/*Fondo*/
+.fondo{
+  background: #003300;
+}
+/*margen de la foto */
+.margen-foto{
+  margin: 50px 10px 10px 10px;
+}
+/*margen del texto */
+.margen-text{
+  margin: 100px 10px 10px 100px;
+}
+/* 2do fondo */
+.fondo2 {
+  background:url('https://preview.ibb.co/bU2afQ/IMG_1076.png') no-repeat;
+  background-size:cover;
+  background-color: #009900;
+	/*margin: -15px;*/
+}
+/*fondo thumbnail */
+.thumbnail{
+  background: #80ff80;
+  border-color:#80ff80;
+}
+/*sombra para el texto */
+.borde {
+	color: #fff;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+body{
+ background:black;
+}
+.well{
+	border-color:black;
+}
+/*centrar vertical 2 elementos*/
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.margensup{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.glyphicon{
+	color: #ff0000;
+}
+.fondo3 {
+  background:url('https://preview.ibb.co/ccb7C5/Mingo_en_negro.png') no-repeat;
+  background-size:cover;
+  background-color: black;
+/*	margin:-15px;*/
+}
+.mcontact{
+	margin-top:10px;
+	padding-top:20px;
+	
+}
+.smallt{
+	font-size:15px;
+}
+.textcar{
+	font-family:'Bellefair', serif;
+}
+.textti{
+	font-family:'Tiene', serif;
+}
+.colorPort{
+	color:#999966;
+}
+.colorbtn{
+	color:#000;
+}
+.textgen{
+	font-family: 'Gentium Basic', serif;
+}
+.margenbot{
+	margin-bottom:-15px;
+}
+.borde a{
+	color:#fff;
+}
+.textgr{
+	font-size:20px;
+}
